@@ -3,7 +3,7 @@
   <div class="container">
       <div class="brand-logo ">
         <a class="navbar-brand logo-dark hide" href="#">
-           <img src="{{ section.settings.logo | image_url }}" class="img-fluid" /> 
+           <img src="{{ section.settings.logo_dark | image_url }}" class="img-fluid" /> 
         </a>
         <a class="navbar-brand logo-light hide" href="#">
           <img src="{{ section.settings.logo | image_url }}" class="img-fluid" /> 
@@ -50,11 +50,16 @@
       "label": "t:sections.header.settings.logo.label"
     },
     {
+      "type": "image_picker",
+      "id": "logo_dark",
+      "label": "Logo Dark"
+    },
+    {
       "type": "range",
       "id": "logo_width",
-      "min": 50,
-      "max": 250,
-      "step": 10,
+      "min": 25,
+      "max": 100,
+      "step": 25,
       "default": 100,
       "unit": "t:sections.header.settings.logo_width.unit",
       "label": "t:sections.header.settings.logo_width.label"
