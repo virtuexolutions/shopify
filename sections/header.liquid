@@ -1,10 +1,10 @@
 
-{{ section.settings.logo | image_url }}
+{{ t:sections.header.settings.logo.label  }}
 <nav class="navbar navbar-expand-lg bg-transparent">
   <div class="container">
       <div class="brand-logo ">
         <a class="navbar-brand logo-dark hide" href="#">
-           <img src="images/logo-dark.png" class="img-fluid" /> 
+           <img src="{{ section.settings.logo | image_url }}" class="img-fluid" /> 
         </a>
         <a class="navbar-brand logo-light hide" href="#">
           <img src="images/logo-light.png" class="img-fluid" /> 
@@ -48,6 +48,11 @@
     {
       "type": "image_picker",
       "id": "logo",
+      "label": "t:sections.header.settings.logo.label"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo_dark",
       "label": "t:sections.header.settings.logo.label"
     },
     {
