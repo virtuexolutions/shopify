@@ -1,6 +1,3 @@
-{% for link in linklists[section.settings.menu].links -%}
-  {{ link.title | link_to: link.url }}
-{%- endfor %}
 
 <nav class="navbar navbar-expand-lg bg-transparent">
   <div class="container">
@@ -41,6 +38,10 @@
       </nav>
     </div>
 </nav>
+<h1>sadasda</h1>
+{% for link in linklists[section.settings.menu].links -%}
+  {{ link.title | link_to: link.url }}
+{%- endfor %}
 
 {% schema %}
 {
