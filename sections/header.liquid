@@ -39,9 +39,9 @@
     </div>
 </nav>
 <h1>sadasda</h1>
-{% for link in linklists[section.settings.menu].links -%}
+{% comment %} {% for link in linklists[section.settings.menu].links -%}
   {{ link.title | link_to: link.url }}
-{%- endfor %}
+{%- endfor %} {% endcomment %}
 
 {% schema %}
 {
