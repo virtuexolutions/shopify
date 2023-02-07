@@ -3,7 +3,7 @@
   <div class="container">
       <div class="brand-logo ">
         <a class="navbar-brand logo-dark hide" href="#">
-           <img src="{{ section.settings.logo_dark | image_url }}" class="img-fluid" /> 
+           <img src="{{ section.settings.logo | image_url }}" class="img-fluid" /> 
         </a>
         <a class="navbar-brand logo-light hide" href="#">
           <img src="{{ section.settings.logo | image_url }}" class="img-fluid" /> 
@@ -11,7 +11,7 @@
       </div>
       <div class="d-flex justify-content-center align-items-center nav-side">
         <div class="search-input">
-           <input class="form-control me-2" type="search" value="ssss" placeholder="Search" aria-label="Search">
+           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         </div>
         <div class="header-actions">
               <a><i class="far fa-light fa-heart" aria-hidden="true"></i></a>
@@ -38,9 +38,6 @@
       </nav>
     </div>
 </nav>
-{% comment %} {% for link in linklists[section.settings.menu].links -%}
-  {{ link.title | link_to: link.url }}
-{%- endfor %} {% endcomment %}
 
 {% schema %}
 {
@@ -53,16 +50,11 @@
       "label": "t:sections.header.settings.logo.label"
     },
     {
-      "type": "image_picker",
-      "id": "logo_dark",
-      "label": "Logo Dark"
-    },
-    {
       "type": "range",
       "id": "logo_width",
-      "min": 25,
-      "max": 100,
-      "step": 25,
+      "min": 50,
+      "max": 250,
+      "step": 10,
       "default": 100,
       "unit": "t:sections.header.settings.logo_width.unit",
       "label": "t:sections.header.settings.logo_width.label"
