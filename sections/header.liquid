@@ -1,43 +1,4 @@
 
-<nav class="navbar navbar-expand-lg bg-transparent">
-  <div class="container">
-      <div class="brand-logo ">
-        <a class="navbar-brand logo-dark hide" href="#">
-           <img src="{{ section.settings.logo | image_url }}" class="img-fluid" /> 
-        </a>
-        <a class="navbar-brand logo-light hide" href="#">
-          <img src="{{ section.settings.logo | image_url }}" class="img-fluid" /> 
-       </a>
-      </div>
-      <div class="d-flex justify-content-center align-items-center nav-side">
-        <div class="search-input">
-           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        </div>
-        <div class="header-actions">
-              <a><i class="far fa-light fa-heart" aria-hidden="true"></i></a>
-              <a><i class="fas fa-shopping-cart" aria-hidden="true"></i></a>
-              <a><i class="far fa-light fa-user" aria-hidden="true"></i></a>
-              <a><div class="button_container" id="toggle">
-                      <span class="top"></span>
-                      <span class="middle"></span>
-                      <span class="bottom"></span>
-                  </div>
-              </a>
-
-        </div>
-      </div>
-   </div>
-    <div class="overlay" id="overlay">
-      <nav class="overlay-menu">
-        <ul>
-          <li ><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Work</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-</nav>
 
 {% schema %}
 {
