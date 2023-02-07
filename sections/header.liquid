@@ -7,7 +7,7 @@
            <img src="{{ section.settings.logo | image_url }}" class="img-fluid" /> 
         </a>
         <a class="navbar-brand logo-light hide" href="#">
-          <img src="images/logo-light.png" class="img-fluid" /> 
+          <img src="{{ section.settings.logo | image_url }}" class="img-fluid" /> 
        </a>
       </div>
       <div class="d-flex justify-content-center align-items-center nav-side">
@@ -43,7 +43,7 @@
 {% schema %}
 {
   "name": "t:sections.header.name",
-  "class": "section-header",
+  "class": "ssection-header",
   "settings": [
     {
       "type": "image_picker",
